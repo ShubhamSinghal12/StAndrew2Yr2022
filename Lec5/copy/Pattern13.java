@@ -1,30 +1,29 @@
-package Lec4;
+package Lec5.copy;
 
-public class Pattern1 {
+public class Pattern13 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		int n = 5;
 		
-		int nst = 5;
 		int row = 1;
-		
-		while(row <= n)
+		int nst = 1;
+		while(row <= 2*n-1)
 		{
-		
 			int cst = 1;
-			
 			while(cst <= nst)
 			{
-//				if(row == 1 || row == n || cst == 1|| cst == nst)
-				if(cst == row || cst + row == n+1)
 				System.out.print("* ");
-				else
-				{
-					System.out.print("  ");
-				}
-				cst+=1;
+				cst += 1;
+			}
+			
+			if(row < n)
+			{
+				nst += 1;
+			}
+			else
+			{
+				nst -= 1;
 			}
 			
 			row += 1;
