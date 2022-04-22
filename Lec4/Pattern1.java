@@ -17,8 +17,8 @@ public class Pattern1 {
 			
 			while(cst <= nst)
 			{
-//				if(row == 1 || row == n || cst == 1|| cst == nst)
-				if(cst == row || cst + row == n+1)
+				if(row == 1 || row == n || cst == 1|| cst == nst)
+//				if(cst == row || cst + row == n+1)
 				System.out.print("* ");
 				else
 				{
